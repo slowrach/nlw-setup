@@ -30,6 +30,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 48px;
+  position: fixed;
+  width: 100%;
 }
 
 button {
@@ -48,7 +50,8 @@ button {
 
 form {
   display: flex;
-  padding: 0px 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .calendário {
@@ -101,4 +104,10 @@ input {
 input:checked {
   background-color: var(--cor6);
   border: 2px solid var(--cor7);
+}
+
+@media (max-width: 500px) {
+  button div {
+    display: none;
+  }
 }
